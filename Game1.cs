@@ -24,12 +24,7 @@ namespace DoodleKong
         Texture2D background;
         Rectangle backgroundrect;
 
-        Texture2D health;
-        Rectangle healthrect;
 
-        Map map;
-        Player player;
-        Camera camera;
 
         List<Bullets> bullets = new List<Bullets>();
 
@@ -50,6 +45,11 @@ namespace DoodleKong
             graphics.PreferredBackBufferHeight = 480;
             graphics.PreferredBackBufferWidth = 600;
             graphics.ApplyChanges();
+
+            if (true)
+            {
+                Console.WriteLine("LOL");
+            }
 
             map = new Map();
             player = new Player(100);
